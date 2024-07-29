@@ -101,6 +101,7 @@ def simulate_option_price_parallel(S0, K, T, r, sigma, M, N, seed=None):
     start_time = time.time()
     num_jobs = multiprocessing.cpu_count()
     chunk_size = N // num_jobs
+
     def parallel_simulate(chunk_size, seed):
         payoffs = np.zeros(chunk_size)
         # print(seed)
@@ -120,10 +121,11 @@ def simulate_option_price_parallel(S0, K, T, r, sigma, M, N, seed=None):
 # create a mp version of simulate_option_price_parallel
 def simulate_option_price_parallel_MP(S0, K, T, r, sigma, M, N, seed=None):
     start_time = time.time()
+
     num_jobs = multiprocessing.cpu_count()
     chunk_size = N // num_jobs
     chunk_size_list = int(chunk_size) * np.ones(num_jobs)
-    chunk_size_list = chunk_size_list.astype(np.int16)
+    chunk_size_list = chunk_size_list.astype(np.int64)
     seeds = np.array_split(seed, num_jobs)
     pool = Pool(ncpus=num_jobs)
 
