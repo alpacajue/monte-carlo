@@ -1,6 +1,5 @@
 # %%
 # Import libraries
-
 import numpy as np
 import multiprocessing
 from joblib import Parallel, delayed
@@ -154,8 +153,6 @@ def simulate_option_price_parallel_MP(S0, K, T, r, sigma, M, N, seed=None):
     runtime = time.time() - start_time
     
     return option_price, runtime
-
-
     
 # %%
 # Main code
