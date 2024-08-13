@@ -78,7 +78,8 @@ If you wish to re-run the Monte Carlo simulations:
 This project demonstrates the effectiveness of Monte Carlo simulations for option pricing and the significant performance gains achievable through parallel computing. MATLAB's optimized numerical libraries and parallel processing capabilities make it a preferred choice for complex financial modeling tasks, though Python remains a flexible alternative.
 ### Runtime Comparison
 Below is a runtime comparison between MATLAB and Python implementations in both parallel and non-parallel configurations:
-![Runtime Comparison](path/to/your/image.png)
+![Runtime Comparison](runtime_comparison.png)
+
 
 ## Resources
 - [MATLAB Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html)
