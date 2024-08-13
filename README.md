@@ -30,7 +30,6 @@ The project is centered around the following key files:
 - `monte_carlo_multiprocessing.py`: Python script for running the Monte Carlo simulations using multiprocessing.
 - `MATLAB_Results.mat`: Pre-computed MATLAB results from the Monte Carlo simulations.
 - `Python_Results.mat`: Pre-computed Python results from the Monte Carlo simulations.
-- `runtime_comparison.png`: An image file showing the runtime comparison between MATLAB and Python implementations.
 
 
 ## Requirements
