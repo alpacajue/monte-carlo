@@ -119,12 +119,26 @@ def simulate_option_price_parallel(S0, K, T, r, sigma, M, N, seed=None):
 # create a mp version of simulate_option_price_parallel
 
 def simulate_option_price_parallel_MP(S0, K, T, r, sigma, M, N, seed=None):
-    
+    """
+    Function:
+        Simulate call option price using the Monte Carlo method with parallel processing.
+    Parameters:
+        S0 (float): Initial stock price.
+        K (float): Strike price of the option.
+        T (float): Time to maturity (in years).
+        r (float): Risk-free interest rate (annualized).
+        sigma (float): Volatility of the underlying asset (annualized).
+        M (int): Number of time steps in the simulation.
+        N (int): Number of paths to simulate.
+        seed (array-like, optional): Random seed array for reproducibility. If None, the simulation is not seeded.
+    Returns:
+        float: Simulated call option price.
+        float: Runtime of the simulation (in seconds).
+    """
     start_time = time.time()
     num_jobs = multiprocessing.cpu_count()
     chunk_size = N // num_jobs
     chunk_size_list = int(chunk_size) * np.ones(num_jobs, dtype=np.int64)
-    
     seeds = np.array_split(seed, num_jobs)
     pool = Pool(ncpus=num_jobs)
     
@@ -137,7 +151,6 @@ def simulate_option_price_parallel_MP(S0, K, T, r, sigma, M, N, seed=None):
         return temp
 
     results = pool.map(parallel_simulate_MP, chunk_size_list, seeds)
-
     option_price = np.mean(results)
     runtime = time.time() - start_time
     
