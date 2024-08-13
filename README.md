@@ -26,7 +26,7 @@ Monte Carlo simulation is a widely used computational algorithm in finance for m
 
 ## Project Structure 
 The project is centered around the following key files:
-- `OptionPricing_FinalReview.mlx`: MATLAB live script for running the Monte Carlo simulations and comparing the results with the Black-Scholes formula.
+- `monte_carlo.mlx`: MATLAB live script for running the Monte Carlo simulations and comparing the results with the Black-Scholes formula.
 - `monte_carlo_multiprocessing.py`: Python script for running the Monte Carlo simulations using multiprocessing.
 - `MATLAB_Results.mat`: Pre-computed MATLAB results from the Monte Carlo simulations.
 - `Python_Results.mat`: Pre-computed Python results from the Monte Carlo simulations.
@@ -48,11 +48,11 @@ The project is centered around the following key files:
    ```
 
 ### 2. Ensure all files are in the same directory:
-When running the scripts, ensure that all relevant files (`OptionPricing_FinalReview.mlx`, `MATLAB_Results.mat`, `Python_Results.mat`, etc.) are in the same directory. You can use the `pwd` command in MATLAB to confirm this.
+When running the scripts, ensure that all relevant files (`monte_carlo.mlx`, `MATLAB_Results.mat`, `Python_Results.mat`, etc.) are in the same directory. You can use the `pwd` command in MATLAB to confirm this.
 
 ### 3. MATLAB Usage:
 #### Option 1: Use Pre-Computed Results:
-1. Open the `OptionPricing_FinalReview.mlx` script in MATLAB.
+1. Open the `monte_carlo.mlx` script in MATLAB.
 2. Set the `doComputing` flags to `false` within the script to load and display the pre-computed results stored in `MATLAB_Results.mat` and `Python_Results.mat`.
 3. Run the script to view the results and runtime comparison plots.
 #### Option 2: Re-run the Simulations:
