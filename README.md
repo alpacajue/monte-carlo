@@ -10,7 +10,8 @@ This repository demonstrates the application of Monte Carlo simulations in finan
 4. [Usage](#usage)
 5. [Results and Conclusion](#results-and-conclusion)
 6. [Resources](#resources)
-7. [Contact Information](#contact-information)
+7. [License](#license)
+8. [Contact Information](#contact-information)
 
 ## Project Background and Key Features
 Monte Carlo simulation is a widely used computational algorithm in finance for modeling asset price behavior and estimating the value of financial derivatives, such as options. This project employs Monte Carlo simulation to estimate the price of a European call option by simulating multiple paths for the underlying asset price. The results are then compared with the theoretical price derived from the Black-Scholes formula.
