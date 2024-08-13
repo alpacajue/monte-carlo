@@ -79,22 +79,28 @@ To improve computing performance, we implemented a vectorized version of the Mon
 Below is the runtime comparison between MATLAB (CPU), Python (CPU), and Python (GPU) implementations:
 ![GPU Performance Comparison](gpu_comparison.png)
 
-### GPU Performance Comparison
-Below is the runtime comparison between MATLAB (CPU), Python (CPU), and Python (GPU) implementations:
-![GPU Performance Comparison](gpu_.png)
-
 
 ## Resources
 - [MATLAB Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html)
 - [What Is Monte Carlo Simulation?](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - [Black-Scholes Model](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
+- [Reduce Time to Results with MATLAB Using Parallel Computing](https://www.mathworks.com/videos/reduce-time-to-results-with-matlab-using-parallel-computing-1691992378869.html?s_tid=srchtitle_site_search_1_Parallel_Time)
+- [Python Multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
+## Acknowledgements
+This project was a collaborative effort between Columbia University and MathWorks. We are immensely grateful to the following individuals for their invaluable contributions and unwavering support:
+- **[Yuchen Dong](https://www.linkedin.com/in/yuchen-dong-48061582/)** - for providing comprehensive technical guidance and mentorship. Yuchen played a crucial role in facilitating communication across the team and supporting all aspects of the project’s development. We deeply appreciate the journey we’ve shared and the progress we’ve made together under his guidance.
+- **[Weinan Chen](https://www.linkedin.com/in/weinan-chen-30bb3b50/)** - for offering insightful reviews and suggestions that greatly contributed to refining the project and ensuring its overall quality.
+- **[Michael Robbins](https://www.linkedin.com/in/michaelrobbins/)** - for his additional mentorship and continuous support, which were instrumental in the successful completion of this project.
+
+We also extend our appreciation to the open-source community and the developers of the tools and libraries used in this project.
+
 ## Contact Information
-For any questions, suggestions, or collaboration inquiries, feel free to reach out:
-- [jl6649@columbia.edu](mailto:jl6649@columbia.edu)
-- [lc3813@columbia.edu](mailto:lc3813@columbia.edu)
+For any questions, suggestions, or collaboration inquiries, feel free to reach out via email or LinkedIn:
+- **Jue Liu** - [jl6649@columbia.edu](mailto:jl6649@columbia.edu) | [LinkedIn](https://www.linkedin.com/in/jue-l/)
+- **Lixue Cheng** - [lc3813@columbia.edu](mailto:lc3813@columbia.edu) | [LinkedIn](https://www.linkedin.com/in/charlottecheng0501/)
