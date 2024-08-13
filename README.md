@@ -74,6 +74,14 @@ This project demonstrates the effectiveness of Monte Carlo simulations for optio
 ### Runtime Comparison
 Below is a runtime comparison between MATLAB and Python implementations in both parallel and non-parallel configurations:
 ![Runtime Comparison](runtime_comparison.png)
+### High Performance and GPU Computing
+To improve computing performance, we implemented a vectorized version of the Monte Carlo simulations and leveraged GPU acceleration on an AWS g5 instance with an NVIDIA A10G GPU (72 streaming processors, 24 GB memory), using PyTorch 2.4 and PyTorch-CUDA 12.1 at default double precision.
+Below is the runtime comparison between MATLAB (CPU), Python (CPU), and Python (GPU) implementations:
+![GPU Performance Comparison](gpu_comparison.png)
+
+### GPU Performance Comparison
+Below is the runtime comparison between MATLAB (CPU), Python (CPU), and Python (GPU) implementations:
+![GPU Performance Comparison](gpu_.png)
 
 
 ## Resources
