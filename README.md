@@ -24,12 +24,13 @@ Monte Carlo simulation is a widely used computational algorithm in finance for m
 
 
 ## Project Structure 
-The project is organized into the following files:
+The project is centered around the following key files:
 - `OptionPricing_FinalReview.mlx`: MATLAB live script for running the Monte Carlo simulations and comparing the results with the Black-Scholes formula.
 - `monte_carlo_multiprocessing.py`: Python script for running the Monte Carlo simulations using multiprocessing.
 - `MATLAB_Results.mat`: Pre-computed MATLAB results from the Monte Carlo simulations.
 - `Python_Results.mat`: Pre-computed Python results from the Monte Carlo simulations.
 - `runtime_comparison.png`: An image file showing the runtime comparison between MATLAB and Python implementations.
+
 
 ## Requirements
 - **MATLAB**: R2024a or later with Parallel Computing Toolbox.
