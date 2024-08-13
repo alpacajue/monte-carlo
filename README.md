@@ -17,6 +17,7 @@ This repository demonstrates the application of Monte Carlo simulations in finan
 Monte Carlo simulation is a widely used computational algorithm in finance for modeling asset price behavior and estimating the value of financial derivatives, such as options. This project employs Monte Carlo simulation to estimate the price of a European call option by simulating multiple paths for the underlying asset price. The results are then compared with the theoretical price derived from the Black-Scholes formula.
 
 ### Key Features
+- **Black-Scholes Formula:** The theoretical price of a European call option is calculated using the Black-Scholes formula, and the results are compared with the Monte Carlo estimated price to evaluate accuracy.
 - **Monte Carlo Simulation:** A numerical method used for option pricing, which approximates the value of an option by simulating multiple possible future paths of the underlying asset's price.
 - **Parallel Computing:** Implementations in both MATLAB and Python leverage parallel computing to improve the computational efficiency of the Monte Carlo simulations.
 - **Comparative Analysis:** The repository includes a comparative analysis of the runtime and accuracy between MATLAB and Python implementations, both in parallel and non-parallel configurations.
@@ -29,7 +30,7 @@ The project is organized into the following files:
 - `monte_carlo_multiprocessing.py`: Python script for running the Monte Carlo simulations using multiprocessing.
 - `MATLAB_Results.mat`: Pre-computed MATLAB results from the Monte Carlo simulations.
 - `Python_Results.mat`: Pre-computed Python results from the Monte Carlo simulations.
-
+- `runtime_comparison.png`: An image file showing the runtime comparison between MATLAB and Python implementations.
 
 ## Requirements
 - **MATLAB**: R2024a or later with Parallel Computing Toolbox.
@@ -75,7 +76,9 @@ If you wish to re-run the Monte Carlo simulations:
 
 ## Results and Conclusion
 This project demonstrates the effectiveness of Monte Carlo simulations for option pricing and the significant performance gains achievable through parallel computing. MATLAB's optimized numerical libraries and parallel processing capabilities make it a preferred choice for complex financial modeling tasks, though Python remains a flexible alternative.
-
+### Runtime Comparison
+Below is a runtime comparison between MATLAB and Python implementations in both parallel and non-parallel configurations:
+![Runtime Comparison](path/to/your/image.png)
 
 ## Resources
 - [MATLAB Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html)
