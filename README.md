@@ -10,8 +10,7 @@ This repository demonstrates the application of Monte Carlo simulations in finan
 4. [Usage](#usage)
 5. [Results and Conclusion](#results-and-conclusion)
 6. [Resources](#resources)
-7. [License](#license)
-8. [Contact Information](#contact-information)
+7. [Contact Information](#contact-information)
 
 ## Project Background and Key Features
 Monte Carlo simulation is a widely used computational algorithm in finance for modeling asset price behavior and estimating the value of financial derivatives, such as options. This project employs Monte Carlo simulation to estimate the price of a European call option by simulating multiple paths for the underlying asset price. The results are then compared with the theoretical price derived from the Black-Scholes formula.
@@ -86,9 +85,6 @@ Below is a runtime comparison between MATLAB and Python implementations in both 
 - [What Is Monte Carlo Simulation?](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - [Black-Scholes Model](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
 
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact Information
 For any questions, suggestions, or collaboration inquiries, feel free to reach out:
