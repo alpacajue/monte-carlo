@@ -117,7 +117,6 @@ def simulate_option_price_parallel(S0, K, T, r, sigma, M, N, seed=None):
     return option_price, runtime
 
 # create a mp version of simulate_option_price_parallel
-
 def simulate_option_price_parallel_MP(S0, K, T, r, sigma, M, N, seed=None):
     """
     Function:
