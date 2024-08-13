@@ -24,7 +24,6 @@ Monte Carlo simulation is a widely used computational algorithm in finance for m
 
 ## Project Structure 
 The project is organized into the following files:
-- `README.md`: Provides an overview of the project, usage instructions, and other relevant details.
 - `OptionPricing_FinalReview.mlx`: MATLAB live script for running the Monte Carlo simulations and comparing the results with the Black-Scholes formula.
 - `monte_carlo_multiprocessing.py`: Python script for running the Monte Carlo simulations using multiprocessing.
 - `MATLAB_Results.mat`: Pre-computed MATLAB results from the Monte Carlo simulations.
@@ -46,31 +45,27 @@ The project is organized into the following files:
    cd monte-carlo-option-pricing
    ```
 
-### 2. MATLAB
-#### Option 1: Use Pre-Computed Results
-If you do not wish to re-run the simulations and prefer to use pre-computed results:
+### 2. Ensure all files are in the same directory:
+When running the scripts, ensure that all relevant files (`OptionPricing_FinalReview.mlx`, `MATLAB_Results.mat`, `Python_Results.mat`, etc.) are in the same directory. You can use the `pwd` command in MATLAB to confirm this.
+
+### 3. MATLAB Usage:
+#### Option 1: Use Pre-Computed Results:
 1. Open the `OptionPricing_FinalReview.mlx` script in MATLAB.
 2. Set the `doComputing` flags to `false` within the script to load and display the pre-computed results stored in `MATLAB_Results.mat` and `Python_Results.mat`.
 3. Run the script to view the results and runtime comparison plots.
-#### Option 2: Re-run the Simulations
-If you wish to re-run the Monte Carlo simulations:
-1. Open the `OptionPricing_FinalReview.mlx` script in MATLAB.
-2. Set the `doComputing` flags to `true` within the script to run the simulations from scratch.
-3. Run the script to perform the Monte Carlo simulations and compare the results against the theoretical prices calculated using the Black-Scholes formula.
+#### Option 2: Re-run the Simulations:
+1. Set the `doComputing` flags to `true` within the script to run the simulations from scratch.
+2. Run the script to perform the Monte Carlo simulations and compare the results against the theoretical prices calculated using the Black-Scholes formula.
 
-### 3. Python
-#### Option 1: Use Pre-Computed Results
-If you do not wish to re-run the simulations and prefer to use pre-computed results:
+### 4. Python Usage:
+#### Option 1: Use Pre-Computed Results:
 1. Ensure you have Python version 3.9 to 3.11 installed on your machine.
 2. Open the `monte_carlo_multiprocessing.py` script in your preferred IDE or text editor.
 3. Set the `doComputingPython` flag to `False` to load and display the pre-computed results stored in `Python_Results.mat`.
-#### Option 2: Re-run the Simulations
-If you wish to re-run the Monte Carlo simulations:
+#### Option 2: Re-run the Simulations:
 1. Ensure you have Python version 3.9 to 3.11 installed on your machine.
-2. Install the required Python packages 
-3. Open the `monte_carlo_multiprocessing.py` script in your preferred IDE or text editor. 
-4. Set the `doComputingPython` flag to `True` to perform the simulations from scratch. 
-5. Run the script to perform the Monte Carlo simulations.
+2. Set the `doComputingPython` flag to `True` to perform the simulations from scratch.
+3. Run the script to perform the Monte Carlo simulations.
 
 
 ## Results and Conclusion
@@ -84,6 +79,10 @@ Below is a runtime comparison between MATLAB and Python implementations in both 
 - [MATLAB Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html)
 - [What Is Monte Carlo Simulation?](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - [Black-Scholes Model](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ## Contact Information
